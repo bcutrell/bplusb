@@ -1,0 +1,55 @@
+.navbar .nav,
+.navbar .nav > li {
+    float:none;
+    display:inline-block;
+    *display:inline; /* ie7 fix */
+    *zoom:1; /* hasLayout ie7 trigger */
+    vertical-align: top;
+}
+
+ .navbar-inner {
+    text-align:center;
+}
+
+.navbar {
+  margin-bottom:0;
+}
+
+.jumbotron {
+  margin: 0;
+}
+
+footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.bplusb-box {
+  background-color: #3CEBE4;
+}
+
+.event-info-box {
+   background-color: #E0D5BA; 
+}
+
+.gifts-box {
+  background-color: #916445;
+}
+
+.our-story-box {
+  background-color: #00B5AA;
+}
+
+
+/*freewall example*/
+#pictureGallery { 
+  width: 100%; 
+  margin: auto;}
+
+.item {
+  /*background: blue;*/
+  width: 320px;
+  height: 320px;
+  /*margin: 0;
+  padding: 0;*/
+}
