@@ -46,7 +46,9 @@ footer {
   width: 100%; 
   margin: auto;}
 
-.item {
-  width: 320px;
-  height: 320px;
+.pictures-box { margin: 15px;}
+
+.brick img {
+  margin: 0;
+  display: block;
 }
