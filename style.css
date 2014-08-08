@@ -17,6 +17,7 @@
 
 .jumbotron {
   margin: 0;
+  height: 500px;
 }
 
 footer {
@@ -40,16 +41,12 @@ footer {
   background-color: #00B5AA;
 }
 
-
 /*freewall example*/
 #pictureGallery { 
   width: 100%; 
   margin: auto;}
 
 .item {
-  /*background: blue;*/
   width: 320px;
   height: 320px;
-  /*margin: 0;
-  padding: 0;*/
 }

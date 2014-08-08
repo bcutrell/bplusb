@@ -6,13 +6,17 @@ $(document).ready(function() {
 		wall.reset({
 		  selector: '.item',
 		  animate: true,
-		  // cellW: 'auto',
+		  cellW: 150,
 		  cellH: 'auto',
 		  gutterY: 0,
-		  gutterX: 0
+		  gutterX: 0,
+	  	  onResize: function() {
+				wall.fitZone();
+			}
 		});
-		wall.fillHoles()
 		wall.fitZone();
+		// wall.fillHoles()
+		// wall.fitZone();
 
 	});
 
