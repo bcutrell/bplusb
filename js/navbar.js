@@ -1,4 +1,3 @@
-/* Make something awesome! */
 // Sticky Header
 $(document).ready( function() {
   
