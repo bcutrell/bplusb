@@ -3,12 +3,13 @@ $(document).ready(function() {
 });
 
 function startPictureGallery() {
-	var temp = "<div class='brick' style='width:{width}px;'><img class='desaturate' src='img/{index}.jpg' width='100%'></div>";
+	var temp = "<div class='brick' style='width:{width}px;'><a href='img/{index}.jpg' data-lightbox='all-pics'><img class='desaturate' src='img/{index}.jpg' width='100%'></a></div>";
 		// limitItem is the number of images in the img folder
 		var w = 1, h = 1, html = '', limitItem = 5;
 		for (var i = 0; i < limitItem; ++i) {
 			w = 1 + 3 * Math.random() << 0;
-			html += temp.replace(/\{width\}/g, w*150).replace("{index}", i );
+			html += temp.replace(/\{width\}/g, w*150).replace(/{index}/g, i );
+			// /blue/g
 		}
 
 	$("#pictureGallery").html(html);
