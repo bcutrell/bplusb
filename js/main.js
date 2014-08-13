@@ -1,10 +1,9 @@
 $(document).ready(function() {
 	startPictureGallery();
-	addImageGrayScale();
 });
 
 function startPictureGallery() {
-	var temp = "<div class='brick' style='width:{width}px;'><img src='img/{index}.jpg' width='100%'></div>";
+	var temp = "<div class='brick' style='width:{width}px;'><img class='desaturate' src='img/{index}.jpg' width='100%'></div>";
 		// limitItem is the number of images in the img folder
 		var w = 1, h = 1, html = '', limitItem = 5;
 		for (var i = 0; i < limitItem; ++i) {
