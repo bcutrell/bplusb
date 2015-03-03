@@ -26,4 +26,5 @@ $(document).ready(function() {
 			images.find('img').load(function() {
 				wall.fitWidth();
 			});
+
 });
