@@ -2,10 +2,6 @@ $(document).ready(function() {
 	startPictureGallery();
 });
 
-var str = "Mr Blue has a blue house and a blue car";
-var res = str.replace(/blue/g, "red");
-
-
 function startPictureGallery() {
 	// var temp = "<div class='brick' style='width:{width}px;'><img src='img/{index}.jpg' width='100%'></div>";
 	var temp = "<div class='brick' style='width:{width}px;'><a href='img/INDEX.jpg' data-lightbox='all-pics'><img class='desaturate' src='img/INDEX.jpg' width='100%'></a></div>";
