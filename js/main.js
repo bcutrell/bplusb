@@ -3,16 +3,16 @@ $(document).ready(function() {
 });
 
 function startPictureGallery() {
-		var temp = "<div class='brick' style='width:{width}px;'><img src='img/{index}.jpg' width='100%'></div>";
-			// limitItem is the number of images in the img folder
-			var w = 1, h = 1, html = '', limitItem = 8;
-			for (var i = 0; i < limitItem; ++i) {
-				w = 1 + 3 * Math.random() << 0;
-				html += temp.replace(/\{width\}/g, w*150).replace("{index}", i );
-			}
+	// var temp = "<div class='brick' style='width:{width}px;'><img src='img/{index}.jpg' width='100%'></div>";
+	var temp = "<div class='brick' style='width:{width}px;'><a href='img/INDEX.jpg' data-lightbox='all-pics'><img class='desaturate' src='img/INDEX.jpg' width='100%'></a></div>";
+		// limitItem is the number of images in the img folder
+		var w = 1, h = 1, html = '', limitItem = 8;
+		for (var i = 0; i < limitItem; ++i) {
+			w = 1 + 3 * Math.random() << 0;
+			html += temp.replace(/\{width\}/g, w*150).replace(/INDEX/g, i );
+		}
 
 	$("#pictureGallery").html(html);
-
 	var wall = new freewall("#pictureGallery");
 	
 	wall.reset({
@@ -30,7 +30,7 @@ function startPictureGallery() {
 		images.find('img').load(function() {
 			wall.fitWidth();
 		});
-	}
+}
 
 function addImageGrayScale() {
 	// Fade in images so there isn't a color "pop" document load and then on window load
@@ -57,7 +57,7 @@ function addImageGrayScale() {
 };
 
 // Grayscale w canvas method
-function grayscale(src){
+function grayscale(src) {
 	var canvas = document.createElement('canvas');
 	var ctx = canvas.getContext('2d');
 	var imgObj = new Image();
@@ -78,9 +78,3 @@ function grayscale(src){
 	ctx.putImageData(imgPixels, 0, 0, 0, 0, imgPixels.width, imgPixels.height);
 	return canvas.toDataURL();
 }
-		var images = wall.container.find('.brick');
-			images.find('img').load(function() {
-				wall.fitWidth();
-			});
-
-});
