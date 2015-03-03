@@ -1,10 +1,3 @@
-/*color scheme
-white => #FFEAD6
-blue => #34CCD6
-red => #FF8F7A
-lightgreen => #82CC88
-darkgreen => #5B855E*/
-
 .navbar .nav,
 .navbar .nav > li {
     float:none;
@@ -22,17 +15,9 @@ darkgreen => #5B855E*/
   margin-bottom:0;
 }
 
-
-footer {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
 .bplusb-box {
 
 }
-
-
 
 .event-info-box {
   margin-top: 100px;
