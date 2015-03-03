@@ -3,6 +3,7 @@ $(document).ready(function() {
 });
 
 function startPictureGallery() {
+	// deal with capital jpg?
 	// var temp = "<div class='brick' style='width:{width}px;'><img src='img/{index}.jpg' width='100%'></div>";
 	var temp = "<div class='brick' style='width:{width}px;'><a href='img/gallery/INDEX.jpg' data-lightbox='all-pics'><img class='desaturate' src='img/gallery/INDEX.jpg' width='100%'></a></div>";
 		// limitItem is the number of images in the img folder
