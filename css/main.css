@@ -19,7 +19,7 @@ a {color: inherit; text-decoration: none;}
 
 /*EVENTS INFO SECTION*/
 .event-info-box {}
-.events-timeline-table td { width: 500px}
+.events-timeline-table td { width: 500px;}
 .events-timeline-table, .events-directions-table {
   height: 450px;
 }
@@ -46,7 +46,7 @@ white-text F3F3F3
 
 .credits-box {
   background-color: #C0C0C0;
-  height: 300px;
+  min-height: 400px;
 }
 
 .credits-box div span:first-child {
@@ -109,6 +109,11 @@ filter: none;
   min-height: 100%;
   display: flex;
   align-items: center;
+}
+
+.col-centered {
+    display: table;
+    margin: 0 auto;
 }
 
 /*IMAGES*/

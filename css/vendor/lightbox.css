@@ -183,8 +183,9 @@ body:after {
   display: block;
   clear: left;
   padding-bottom: 1em;
-  font-size: 12px;
+  font-size: 16px;
   color: #999999;
+  font-family: 'Josefin Slab', serif;
 }
 
 .lb-data .lb-close {
