@@ -1,5 +1,7 @@
 <!doctype html>
 <html>
+<!-- 
+http://www.webdesignerdepot.com/2014/05/8-simple-css3-transitions-that-will-wow-your-users/ -->
   <head>
     <title>B plus B</title>
     <meta charset="utf-8">
@@ -14,116 +16,173 @@
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     <script type="text/javascript" src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="http://markdalgleish.com/projects/stellar.js/js/stellar.js"></script>
-    <!-- http://codepen.io/techhysahil/pen/hnIes -->
-    <!-- http://codepen.io/mok20123/pen/jsdcu -->
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Grand+Hotel' rel='stylesheet' type='text/css'>
   </head>
   
   <body>
     <header class="main_h">
       <div class="row">
         <div class="mobile-toggle">
-          <!-- number of bars in the mobile toggle -->
-          <span></span><span></span><span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span> <!-- number of bars in the mobile toggle -->
         </div>
         <div class="text-center">
           <nav>
             <ul>
-              <li>
-                <a href=".bplusb-box">b+b</a>
-              </li>
-              <li>
-                <a href=".event-info-box">event info</a>
-              </li>
-              <li>
-                <a href=".travel-box">travel</a>
-              </li>
-              <li>
-                <a href=".wedding-party-box">wedding party</a>
-              </li>
-              <li>
-                <a href=".gallery-box">gallery</a>
-              </li>
-              <li>
-                <a href=".registry-box">registry</a>
-              </li>
+              <li><a href=".bplusb-box">b+b</a></li>
+
+              <li><a href=".event-info-box">event info</a></li>
+
+              <li><a href=".travel-box">travel</a></li>
+
+              <li><a href=".wedding-party-box">wedding party</a></li>
+
+              <li><a href=".gallery-box">gallery</a></li>
+
+              <li><a href=".registry-box">registry</a></li>
             </ul>
           </nav>
         </div>
       </div>
     </header>
 
-        <div class="bplusb-box">
-          <div class="container">
-            <div class="span12 padding-0">
-              <!-- <img src="img/wedding_cartoon.jpg" /> -->
-              <div class="parallax-window" data-parallax="scroll" data-image-src="img/wedding_cartoon.jpg"></div>
-            </div>
+    <div class="bplusb-box"> <!-- START WEDDING CARTOON -->
+      <div class="container">
+        <div class="span12 padding-0">
+          <div class="parallax-window" data-parallax="scroll" data-image-src="img/wedding_cartoon.jpg"></div>
+        </div>
+      </div>
+    </div> <!-- END WEDDING CARTOON -->
+
+    <div class="event-info-box margin-bottom-100"> <!-- START EVENT INFO -->
+      <div class="container">
+        <div class="span12 padding-0 margin-bottom-50">
+          <img src="img/event_info_banner.png" />
+        </div>
+        
+        <div class="row">
+          <div class="col-md-6">
+            <table class="events-directions-table">
+              <tr>
+                <td>
+                  <span class="grand-font big-text">celebrate with us at</span>
+                  <br>
+                  <span class="josefin-font med-text">THE ASHFORD ESTATE</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div>
+                    <div class="float-left">
+                      <span class="josefin-font med-text">located in <br> Allentown, <br>   New Jersey</span>
+                    </div>
+
+                    <img class="center" src="img/icons/nj_icon.png" />  
+                  </div>
+
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="ww.google.com">
+                    <button type="button" class="directions-btn josefin-font btn btn-success btn-lg">View Driving Directions</button>
+                  </a>
+                </td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="col-md-6">
+            <table class="events-timeline-table">
+              <tr>
+                <td>
+                  <div class="event-icon float-left">
+                    <img src="img/icons/games_icon.png" />
+                  </div>
+                  <span class="med-text josefin-font">4:30 PM</span>
+                  <br>
+                  <span class="med-text josefin-font">refreshments &amp; games</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="event-icon float-left">
+                    <img src="img/icons/ceremony_icon.png" />
+                  </div>
+                  <span class="med-text josefin-font">5:30 PM</span>
+                  <br>
+                  <span class="med-text josefin-font">ceremony</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="event-icon float-left">
+                    <img class="rec-icon" src="img/icons/reception_icon.png" />
+                  </div>
+                  <span class="med-text josefin-font">6:00 PM</span>
+                  <br>
+                  <span class="med-text josefin-font">eat, drink, &amp; be merry</span>
+                </td>
+              </tr>
+            </table>
           </div>
         </div>
+        
 
-        <div class="event-info-box">
-          <div class="container-fluid">
-              <div class="span12 padding-0">
-                <img src="img/event_info_banner.png" />
-              </div>
-            <br><br>
 
-            <div class="event-information">
-              <div class="col-md-6 event-directions">
-                <img src="img/event_location.png" />
-                <!-- <a href="ww.google.com"> -->
-                <!-- add size -->
-                <button type="button" id="directions-button" class="btn btn-success btn-lg">View Driving Directions</button>
-              </div>
-              <div class="col-md-6 events-timeline">
-                <img src="img/events_timeline.png" />
-              </div>
-            </div>
+      </div> <!-- END CONTAINER -->
+    </div> <!-- END EVENT INFO -->
 
+    <div class="travel-box margin-bottom-100">
+      <div class="container-fluid">
+        <div class="span12 padding-0 margin-bottom-100">
+          <img src="img/travel_banner.png" />
+        </div>
+
+        <div class="row">
+          <div class="col-md-4">
+            <img class="travel-img" src="img/airport_text.png" />
           </div>
-        </div> <!-- END EVENT INFO -->
+          <div class="col-md-8">
+          <span class="med-text josefin-font">For those traveling from afar, you can fly into Newark Liberty International Airport or Philadelphia International Airport</span>
+          </div>
+        </div> <!-- END AIRPOTS ROW -->
 
         <br><br>
 
-        <div class="">
-          <div class="container-fluid">
-            <div class="span12 padding-0">
-              <img src="img/travel_banner.png" />
-            </div>
-
-            <div class="row">
-              <div class="col-md-4">
-                <img src="img/airport_text.png" />
-              </div>
-              <div class="col-md-8">
-              </div>
-            </div> <!-- END AIRPOTS ROW -->
-
-            <br><br>
-
-            <div class="row">
-              <div class="col-md-8">
-                  
-              </div>
-              <div class="col-md-4">
-                <img src="img/hotel_text.png" />
-              </div>
-            </div> <!-- END HOTELS ROW -->
+        <div class="row">
+          <div class="col-md-8">
+          <span class="med-text josefin-font">
+          A block of rooms is reserved under the Jack/Cutrell Wedding at both the Homewood Suites in Hamilton, NJ and the Hampton Inn in Robbinsville, NJ
+          </span>
+          </div>
+          <div class="col-md-4">
+            <img class="travel-img" src="img/hotel_text.png" />
+          </div>
+        </div> <!-- END HOTELS ROW -->
 
 
 
           </div>
         </div> <!-- END TRAVEL -->
 
-        <div class="">
+        <div class="wedding-party-box">
           <div class="container-fluid">
             <div class="span12 padding-0">
               <img src="img/wedding_party_banner.png" />
             </div>
           </div>
+
+
+          <div class="row">
+            <div class="col-md-2">
+              
+            </div>
+
+          </div>
         </div>
 
-        <div class="">
+        <div class="gallery-box">
           <div class="container-fluid">
             <div class="span12 padding-0">
               <img src="img/gallery_banner.png" />
@@ -135,20 +194,52 @@
           </div>
         </div>
 
-        <div class="">
-          <div class="container-fluid">
+        <div class="registry-box">
+          <div class="container">
             <div class="span12 padding-0">
               <img src="img/registry_banner.png" />
+            </div>
+
+            <div class="row vertical-center">
+              <div class="col-md-6">
+                <img class="logo-img" src="img/logo/amazon.png" />
+              </div>
+              <div class="col-md-6">
+                <img class="logo-img" src="img/logo/anthropologie.png" />
+              </div>
+            </div>
+
+            <div class="row vertical-center">
+              <div class="col-md-6">
+                <img class="logo-img " src="img/logo/crate-and-barrel-logo.png" />
+              </div>
+              <div class="col-md-6">
+                <img class="logo-img" src="img/logo/west-elm.png" />
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="">
+        <div class="credits-box">
             <div class="span12 padding-0">
-              <img src="img/credits_banner.png" />
+              <span class="big-text josefin-font">we can’t wait to celebrate with you!</span>
+
+              <div class="bplusb-heart">
+                <img src="img/icons/bplusbheart.png" />
+              </div>
+
+              <span class="credits-text small-text josefin-font">
+              designed by the 
+              <a href=""><strong>bride.</strong></a>
+              built by the 
+              <a href=""><strong>groom.</strong></a>
+              illustration by 
+              <a href=""><strong>hitomi</strong></a>
+              <span>
             </div>
         </div>
-      <!--/.container-->
+
+
     </div>
     <script type="text/javascript" src="js/navbar.js"></script>
     <script type="text/javascript" src="js/vendor/freewall.js"></script>

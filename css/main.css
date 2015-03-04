@@ -1,3 +1,5 @@
+a {color: inherit; text-decoration: none;}
+
 .navbar .nav,
 .navbar .nav > li {
     float:none;
@@ -7,33 +9,59 @@
     vertical-align: top;
 }
 
-.navbar-inner {
-  text-align:center;
-}
+.navbar-inner { text-align:center;}
 
 .navbar {
   margin-bottom:0;
 }
 
-.bplusb-box {
+.bplusb-box { margin-bottom: 50px}
 
+/*EVENTS INFO SECTION*/
+.event-info-box {}
+.events-timeline-table td { width: 500px}
+.events-timeline-table, .events-directions-table {
+  height: 450px;
+}
+.event-text span {margin-left:15px;}
+.event-icon {width: 150px;}
+.directions-btn { width: 100%; }
+
+/*TRAVEL SECTION*/
+.travel-box {}
+.travel-img { width: 300px; height: 120px }
+
+.wedding-party-box {}
+
+.gallery-box {}
+
+.registry-box {}
+
+/*credits colors
+gray C0C0C0
+black 0D0D0D
+white-text F3F3F3
+*/
+.credits-box { position: relative; }
+
+.credits-box {
+  background-color: #C0C0C0;
+  height: 300px;
 }
 
-.event-info-box {
-  margin-top: 100px;
+.credits-box div span:first-child {
+  padding-top: 50px;
+  text-align: center;
+  color: #F3F3F3;
+  margin: auto;
+  display: inherit;
 }
 
-.event-information img, .event-information button {
-  display:block;
-  margin:auto;
-}
-
-.gifts-box {
-  background-color: #916445;
-}
-
-.our-story-box {
-  background-color: #00B5AA;
+.credits-text {
+  color: #0D0D0D;
+  position: absolute;
+  bottom: 0;
+  right: 1%;
 }
 
 /*PICTURE GALLERY*/
@@ -61,21 +89,44 @@ filter: none;
 }
 
 /*HELPER CLASSES*/
-.padding-0 {
-    padding: 0;
+.padding-0 { padding: 0;}
+
+.margin-top-100 { margin-top: 100px; }
+.margin-bottom-100 { margin-bottom: 100px; }
+.margin-bottom-50 { margin-bottom: 50px; }
+
+.josefin-font {font-family: 'Josefin Slab', serif;}
+.grand-font {font-family: 'Grand Hotel', cursive;}
+
+.big-text {font-size: 50px;}
+.med-text {font-size: 27px;}
+.small-text {font-size: 18px;}
+
+.float-left {float: left;}
+.float-right {float: right;}
+
+.vertical-center {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
 }
 
-/*IMG*/
+/*IMAGES*/
 .span12 img { width: 100%; height: 100%; }
 
-.events-timeline img, .event-directions img { width: 60%; height: 60%;}
+.logo-img {width: 100%; height: 100%; vertical-align: middle}
 
+.bplusb-heart img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px; 
+  height: 100px}
 
+/*PARALLAX IMAGE*/
 .parallax-window {
     min-height: 800px;
     background: transparent;
+    min-width: 700px;
+    background-size: cover;
 }
-
-/*.row {
-  max-width: 1200px
-}*/
