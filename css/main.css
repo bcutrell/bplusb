@@ -19,17 +19,46 @@ a {color: inherit; text-decoration: none;}
 
 /*EVENTS INFO SECTION*/
 .event-info-box {}
+.event-text span {margin-left:15px;}
 .rec-icon {margin-left: -20px;}
 .directions-btn { width: 67.5%; }
 
 /*TRAVEL SECTION*/
 .travel-box {}
+.travel-img { width: 100% }
 
 .wedding-party-box {}
 
 .gallery-box {}
 
 .registry-box {}
+
+/*credits colors
+gray C0C0C0
+black 0D0D0D
+white-text F3F3F3
+*/
+.credits-box { position: relative; }
+
+.credits-box div {
+  background-color: #C0C0C0;
+  height: 400px;
+}
+
+.credits-box div span:first-child {
+  padding-top: 50px;
+  text-align: center;
+  color: #F3F3F3;
+  margin: auto;
+  display: inherit;
+}
+
+.credits-box div span + span {
+  color: #0D0D0D;
+  position: absolute;
+  bottom: 0;
+  right: 1%;
+}
 
 /*PICTURE GALLERY*/
 #pictureGallery { 
@@ -56,9 +85,7 @@ filter: none;
 }
 
 /*HELPER CLASSES*/
-.padding-0 {
-    padding: 0;
-}
+.padding-0 { padding: 0;}
 
 .margin-top-100 { margin-top: 100px; }
 .margin-bottom-100 { margin-bottom: 100px; }
@@ -68,7 +95,7 @@ filter: none;
 
 .big-text {font-size: 50px;}
 .med-text {font-size: 27px;}
-.small-text {font-size: 50px;}
+.small-text {font-size: 18px;}
 
 .float-left {float: left;}
 .float-right {float: right;}
@@ -79,11 +106,8 @@ filter: none;
   align-items: center;
 }
 
-
 /*IMAGES*/
 .span12 img { width: 100%; height: 100%; }
-
-.events-timeline img, .event-directions img { width: 60%; height: 60%;}
 
 /*PARALLAX IMAGE*/
 .parallax-window {
