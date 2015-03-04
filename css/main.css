@@ -114,6 +114,8 @@ filter: none;
 /*IMAGES*/
 .span12 img { width: 100%; height: 100%; }
 
+.logo-img {width: 100%; height: 100%; vertical-align: middle}
+
 .bplusb-heart img {
   display: block;
   margin-left: auto;
