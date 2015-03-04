@@ -46,7 +46,7 @@ white-text F3F3F3
 
 .credits-box {
   background-color: #C0C0C0;
-  height: 300px;
+  min-height: 400px;
 }
 
 .credits-box div span:first-child {
