@@ -3,10 +3,19 @@ $(document).ready( function() {
   
 $(window).scroll(function() {
 
-    if ($(window).scrollTop() > 800) {
-        $('.main_h').addClass('sticky');
+    // TODO DRY this up
+    if ($(window).width() > 700) {
+        if ($(window).scrollTop() > 800) {
+            $('.main_h').addClass('sticky');
+        } else {
+            $('.main_h').removeClass('sticky');
+        }
     } else {
-        $('.main_h').removeClass('sticky');
+        if ($(window).scrollTop() > 400) {
+            $('.main_h').addClass('sticky');
+        } else {
+            $('.main_h').removeClass('sticky');
+        }
     }
 });
 

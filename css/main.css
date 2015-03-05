@@ -46,7 +46,7 @@ white-text F3F3F3
 
 .credits-box {
   background-color: #C0C0C0;
-  min-height: 400px;
+  min-height: 350px;
 }
 
 .credits-box div span:first-child {
@@ -132,6 +132,20 @@ filter: none;
 .parallax-window {
     min-height: 800px;
     background: transparent;
-    min-width: 700px;
-    background-size: cover;
+    /*min-width: 700px;*/
+    /*background-size: cover;*/
+}
+
+/*MEDIA QUERIES*/
+@media (max-width: 700px) { 
+  .parallax-window {
+    min-height: 450px;
+ }
+}
+
+@media (max-width: 500px) {
+  .credits-box {
+    background-color: #C0C0C0;
+    min-height: 450px;
+  }
 }
