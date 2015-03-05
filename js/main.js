@@ -3,11 +3,10 @@ $(document).ready(function() {
 });
 
 function startPictureGallery() {
-	// deal with capital jpg?
 	// var temp = "<div class='brick' style='width:{width}px;'><img src='img/{index}.jpg' width='100%'></div>";
 	var temp = "<div class='brick' style='width:{width}px;'><a href='img/gallery/INDEX.jpg' data-lightbox='all-pics'><img class='desaturate' src='img/gallery/INDEX.jpg' width='100%'></a></div>";
 		// limitItem is the number of images in the img folder
-		var w = 1, h = 1, html = '', limitItem = 28;
+		var w = 1, h = 1, html = '', limitItem = 29;
 		for (var i = 0; i < limitItem; ++i) {
 			w = 1 + 3 * Math.random() << 0;
 			html += temp.replace(/\{width\}/g, w*150).replace(/INDEX/g, i );
