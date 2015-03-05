@@ -28,6 +28,8 @@ a {color: inherit; text-decoration: none;}
 .event-icon {width: 150px;}
 .directions-btn { width: 100%; }
 
+.event-float {float: left;}
+
 /*TRAVEL SECTION*/
 .travel-box {}
 .travel-img { width: 100%; height: 100% }
@@ -163,4 +165,9 @@ filter: none;
   .parallax-window {
     min-height: 300px;
   }
+}
+
+@media (max-width: 500px) {
+/*add fix fox timeline section*/
+.event-float {float: none;}
 }
