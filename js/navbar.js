@@ -11,7 +11,7 @@ $(window).scroll(function() {
             $('.main_h').removeClass('sticky');
         }
     } else {
-        if ($(window).scrollTop() > 400) {
+        if ($(window).scrollTop() > 300) {
             $('.main_h').addClass('sticky');
         } else {
             $('.main_h').removeClass('sticky');
