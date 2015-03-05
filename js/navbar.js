@@ -5,7 +5,7 @@ $(window).scroll(function() {
 
     // TODO DRY this up
     if ($(window).width() > 700) {
-        if ($(window).scrollTop() > 800) {
+        if ($(window).scrollTop() > 765) {
             $('.main_h').addClass('sticky');
         } else {
             $('.main_h').removeClass('sticky');
