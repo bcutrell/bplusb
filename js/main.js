@@ -1,5 +1,6 @@
 $(document).ready(function() {
 	startPictureGallery();
+  weddingParty();
 });
 
 function startPictureGallery() {
@@ -79,10 +80,65 @@ function grayscale(src) {
 }
 
 function weddingParty() {
-	var img_html = "<img class='img-circle' src='img/ladies/INDEX.jpg'>";
+  
+  //  LADIES
+  var image_id = '#ladyGallery'
+	var img_html = "<img class='img-circle' src='img/ladies/INDEX.png' height='150px' width='150px'>";
+	var div_open = "<div class='col-md-3 col-centered-demo'>"
+  var div_close = "</div>"
+  
+  var image_list = makeList(0,6);
+  imageWriter(image_id, img_html, div_open, div_close, image_list)
 
-	var row_one_div = ""
+  //  DUDES
+  var image_id = '#dudeGallery'
+	var img_html = "<img class='img-circle' src='img/dudes/INDEX.png' height='150px' width='150px'>";
+	var div_open = "<div class='col-md-3 col-centered-demo'>"
+  var div_close = "</div>"
+  
+  var image_list = makeList(0,7);
+  imageWriter(image_id, img_html, div_open, div_close, image_list)
 
-	// row one
+}
 
+function imageWriter(image_id, img_html, div_open, div_close, img_list) 
+{
+  
+  fresh_list = shuffle(img_list);
+  html = '';
+  for (var i = 0; i < fresh_list.length; ++i) {
+    html += div_open;
+    html += img_html.replace(/INDEX/g, fresh_list[i] );
+    html += div_close;
+  }
+  
+  $(image_id).append(html);
+}
+
+
+function shuffle(array) {
+  var currentIndex = array.length, temporaryValue, randomIndex ;
+
+  // While there remain elements to shuffle...
+  while (0 !== currentIndex) {
+
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+
+    // And swap it with the current element.
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+
+  return array;
+}
+
+function makeList(lowEnd, highEnd) {
+  var list = [];
+  for (var i = lowEnd; i <= highEnd; i++) {
+      list.push(i);
+  }
+  return list
 }
