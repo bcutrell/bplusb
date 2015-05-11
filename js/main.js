@@ -3,7 +3,6 @@ $(document).ready(function() {
 });
 
 function startPictureGallery() {
-	// var temp = "<div class='brick' style='width:{width}px;'><img src='img/{index}.jpg' width='100%'></div>";
 	var temp = "<div class='brick' style='width:{width}px;'><a href='img/gallery/INDEX.jpg' data-lightbox='all-pics'><img class='desaturate' src='img/gallery/INDEX.jpg' width='100%'></a></div>";
 		// limitItem is the number of images in the img folder
 		var w = 1, h = 1, html = '', limitItem = 29;
@@ -77,4 +76,13 @@ function grayscale(src) {
 	}
 	ctx.putImageData(imgPixels, 0, 0, 0, 0, imgPixels.width, imgPixels.height);
 	return canvas.toDataURL();
+}
+
+function weddingParty() {
+	var img_html = "<img class='img-circle' src='img/ladies/INDEX.jpg'>";
+
+	var row_one_div = ""
+
+	// row one
+
 }
