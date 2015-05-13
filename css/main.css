@@ -67,6 +67,8 @@ a:hover { text-decoration: none;  font-weight: bold;}
   right: 1%;
 }
 
+
+
 /*PICTURE GALLERY*/
 #pictureGallery { 
   width: 100%; 
@@ -128,15 +130,6 @@ filter: none;
     text-align:center;
 }
 
-.col-centered-demo {
-    display:inline-block;
-    float:none;
-    /* reset the text-align */
-    text-align:left;
-    /* inline-block space fix */
-    margin-right:-4px;
-}
-
 /*IMAGES*/
 .span12 img { width: 100%; height: 100%; }
 
@@ -166,7 +159,6 @@ filter: none;
   .parallax-window {
     min-height: 700px; /* double check this */
  }
-
 }
 
 
@@ -191,3 +183,60 @@ filter: none;
 /*add fix fox timeline section*/
 .event-float {float: none;}
 }
+
+/*IMAGE CIRCLES*/
+.col-centered-demo img
+{
+    transition: all 1s;
+    -webkit-transition: all 1s;
+}
+
+.col-centered-demo:hover img {
+    opacity:.075;
+}
+
+.col-centered-demo:hover .circle-text {
+  display: block;
+}
+
+.col-centered-demo {
+    display:inline-block;
+    float:none;
+    position: relative;
+    /* reset the text-align */
+/*    text-align:left;*/
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+
+.img-circle {margin-top: 10px;}
+
+.circle-text {
+    display: none;
+    position: absolute; 
+    top: 25%; 
+    left: 0; 
+    width: 100%; 
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #fecb72;
+    font-weight: bolder;
+    font-family: 'Josefin Sans';
+}
+
+.img-circle:hover .circle-text {
+  display: block;
+}
+
+
+
+/*color: rgba(255,242,34, 0.8);*/
+    /*margin: 0 30px;*/
+    /*padding: 45px 0 0 0;*/
+    /*height: 140px;*/
+
+        /*text-shadow: 
+      0 0 1px #fff, 
+      0 1px 2px rgba(0,0,0,0.3);*/
+
+      /*# color: #fff;*/

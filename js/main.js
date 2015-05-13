@@ -108,11 +108,42 @@ function imageWriter(image_id, img_html, div_open, div_close, img_list)
   html = '';
   for (var i = 0; i < fresh_list.length; ++i) {
     html += div_open;
+    var name = getNameFor(fresh_list[i], image_id)
+    html += "<div class='circle-text'>" + name + "</div>"
     html += img_html.replace(/INDEX/g, fresh_list[i] );
     html += div_close;
   }
-  
   $(image_id).append(html);
+}
+
+function getNameFor(index, image_id) {
+  var dudeNameList = { 
+    0: "Brian", 
+    1: "David", 
+    2: "Gary", 
+    3: "JB", 
+    4: "Brother Cutrell", 
+    5: "Matt",
+    6: "Mix Master Nugs",
+    7: "Pete"
+  }
+
+  var ladyNameList = {
+    0: "Donna", 
+    1: "Hannah", 
+    2: "Hilary", 
+    3: "Madelana", 
+    4: "Madison", 
+    5: "Makayla",
+    6: "Lobes",
+  }
+
+  if (image_id == "#dudeGallery") {
+    return dudeNameList[index]
+  } else {
+    return ladyNameList[index]
+  };
+
 }
 
 
