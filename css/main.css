@@ -219,7 +219,8 @@ filter: none;
     width: 100%; 
     text-transform: uppercase;
     font-size: 16px;
-    color: #fecb72;
+    color: #2a8b43;
+   /*  #fecb72; */
     font-weight: bolder;
     font-family: 'Josefin Sans';
 }
