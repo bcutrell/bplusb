@@ -96,7 +96,7 @@ function weddingParty() {
 	var div_open = "<div class='col-md-3 col-centered-demo'>"
   var div_close = "</div>"
   
-  var image_list = makeList(0,7);
+  var image_list = makeList(0,8);
   imageWriter(image_id, img_html, div_open, div_close, image_list)
 
 }
@@ -125,7 +125,8 @@ function getNameFor(index, image_id) {
     4: "Brother Cutrell", 
     5: "Matt",
     6: "Mix Master Nugs",
-    7: "Pete"
+    7: "Pete",
+    8: "Billy"
   }
 
   var ladyNameList = {

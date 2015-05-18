@@ -139,7 +139,7 @@ filter: none;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 200px; 
+  width: 150px; 
   height: 100px}
 
 /*PARALLAX IMAGE*/
@@ -185,16 +185,6 @@ filter: none;
 }
 
 /*IMAGE CIRCLES*/
-.col-centered-demo img
-{
-    transition: all 1s;
-    -webkit-transition: all 1s;
-}
-
-.col-centered-demo:hover img {
-    opacity:.075;
-}
-
 .col-centered-demo:hover .circle-text {
   display: block;
 }
@@ -203,9 +193,6 @@ filter: none;
     display:inline-block;
     float:none;
     position: relative;
-    /* reset the text-align */
-/*    text-align:left;*/
-    /* inline-block space fix */
     margin-right:-4px;
 }
 
@@ -225,19 +212,12 @@ filter: none;
     font-family: 'Josefin Sans';
 }
 
-.img-circle:hover .circle-text {
-  display: block;
+.img-circle:hover .circle-text { display: block; }
+
+.col-centered-demo img {
+    transition: all 1s;
+    -webkit-transition: all 1s;
 }
 
+.col-centered-demo:hover img { opacity:.075; }
 
-
-/*color: rgba(255,242,34, 0.8);*/
-    /*margin: 0 30px;*/
-    /*padding: 45px 0 0 0;*/
-    /*height: 140px;*/
-
-        /*text-shadow: 
-      0 0 1px #fff, 
-      0 1px 2px rgba(0,0,0,0.3);*/
-
-      /*# color: #fff;*/
